@@ -3,7 +3,7 @@
 from setuptools import setup, find_packages
 
 packages = find_packages()
-desc = open("README.md").read()
+desc = open("README.md").read(),
 
 setup(
     name='cooperhewitt.roboteyes.colors',
@@ -12,13 +12,7 @@ setup(
     description='',
     author='Cooper Hewitt Smithsonian Design Museum',
     url='https://github.com/cooperhewitt/py-cooperhewitt-roboteyes-colors',
-    dependency_links=[
-          'https://github.com/cooperhewitt/py-cooperhewitt-swatchbook/tarball/master#egg=cooperhewitt.swatchbook-0.3',
-      ],
-    install_requires=[
-        'roygbiv',
-        'cooperhewitt.swatchbook',
-    ],
+    install_requires=['roygbiv'],
     packages=packages,
     scripts=[],
     download_url='https://github.com/cooperhewitt/py-cooperhewitt-roboteyes-colors/releases/tag/v0.1',
